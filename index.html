@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Firma Arbusta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./firmail.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</head>
+
+<body>
+    <header class="Banner banner-overlay" id="myHeader">
+        <div class="w3-center slide-in-blurred-top">
+            <h4>Arbusta</b></h4>
+            <h1 class="w3-xxlarge">Generador de Firmas</h1>
+        </div>
+        <footer class="slide-in-blurred-bottom">
+            <div class="Creditos">
+                    <p><img src='https://i.ibb.co/x5HbsqC/ARBLAB-Logo.png' width="30" height="30">Desarrollado por ARB|<b>LAB</b><br>y el equipo de Plataformas</p>
+            </div>
+        </footer>
+    </header>
+
+    <div class="w3-center form-align-top w3-animate-bottom ARBOVERLAY">
+        <div class="form-control">
+            <div class="form-group">
+                <input class="form-control-item" data-toggle="tooltip" title="Ingresa tu nombre y apellido" type="text" name="nombre" id="nombre" placeholder="* Nombre y apellido" required>
+            </div>
+            <div class="form-group">
+                <select class="form-control-item" type="text" name="loc" id="loc" placeholder="Selecciona tu sede" data-toggle="tooltip" title="Selecciona tu sede" required>
+                    <option value="Seleccionar">* Seleccionar sede</option>
+                    <option value="BA">Argentina - Buenos Aires</option>
+                    <option value="R">Argentina - Rosario</option>
+                    <option value="CM">Colombia - Medellín</option>
+                    <option value="MO">Uruguay - Montevideo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input class="form-control-item" type="tel" name="num_cel" id="num_cel" placeholder="(Opcional) Ingresa tu número de celular" data-toggle="tooltip" title="Ingresa tu número de celular (Solo números)">
+            </div>
+            <div class="form-group">
+                <input class="form-control-item" type="text" name="mail" id="mail" placeholder="* Mail @arbusta.net" data-toggle="tooltip" title="Ingresa tu mail. ¡No hace falta ingresar @arbusta.net!" required>
+            </div>
+            <div class="form-group">
+                <select id="puesto" class="form-control-item" data-toggle="tooltip" title="Selecciona tu puesto actual" required>
+                    <option value="Seleccionar">* Seleccionar puesto actual</option>
+                    <option value="Analista Data">Analista Data</option>
+                    <option value="Analista de Administración">Analista de Administración</option>
+                    <option value="Analista de Calidad de Procesos">Analista de Calidad de Procesos</option>
+                    <option value="Analista de Capacitaciones">Analista de Capacitaciones</option>
+                    <option value="Analista de Capital Humano">Analista de Capital Humano</option>
+                    <option value="Analista de Capital Humano y Administración">Analista de Capital Humano y Administración</option>
+                    <option value="Analista de Comunicaciones">Analista de Comunicaciones</option>
+                    <option value="Analista de Entrenamiento y Desarrollo">Analista de Entrenamiento y Desarrollo</option>
+                    <option value="Analista de Plataformas">Analista Plataformas</option>
+                    <option value="Analista de Tecnología">Analista de Tecnología</option>
+                    <option value="Analista Tester">Analista Tester</option>
+                    <option value="Capacity Planner">Capacity Planner</option>
+		    <option value="Coodinador Administrativo">Coordinador Administrativo</option>
+                    <option value="Coordinadora de Comunicaciones">Coordinadora de Comunicaciones</option>
+                    <option value="Coordinadora de Entrenamiento y Desarrollo">Coordinadora de Entrenamiento y Desarrollo</option>
+                    <option value="Coordinador de Plataformas">Coordinador de Plataformas</option>
+                    <option value="Coordinadora/a de Staffing">Coordinadora/a de Staffing</option>                    
+                    <option value="Directora de Capital Humano">Directora de Capital Humano</option>
+                    <option value="Directora de Finanzas">Directora de Finanzas</option>
+                    <option value="Directora de Operaciones">Directora de Operaciones</option>
+                    <option value="Directora de Tecnología">Directora de Tecnología</option>
+                    <option value="Director General">Director General</option>
+                    <option value="Directorio">Directorio</option>
+                    <option value="Especialista Servicios Data">Especialista Servicios Data</option>                    
+                    <option value="Líder de Equipo">Líder de Equipo</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="Referente de Capital Humano">Referente de Capital Humano</option>
+                    <option value="Referente Técnico">Referente Técnico</option>
+                    <option value="Site Manager">Site Manager</option>
+                    <option value="Trainee">Trainee</option>
+                </select>
+            </div>
+            <div class="form-group" style="height:50px">
+                <button class="btn btn-outline-success" name="generar" id="generar" onclick="ejecutar();">Generar firma para insertar</button>
+            </div>
+            <div id="firma" class="firma"></div>
+        </div>
+    </div>
+</body>
+</html>
