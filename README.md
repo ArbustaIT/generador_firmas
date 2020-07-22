@@ -8,4 +8,4 @@ Básicamente funciona así,
 
 y la firma se ve así:
 
-![Resultado](https://i.ibb.co/GQ4wFR4/Firma.png)
+![Resultado](https://i.imgur.com/3qawoOX.png)
