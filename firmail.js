@@ -24,7 +24,7 @@ function ejecutar() {
         //método consulta y formato de firma.
         this.generar = function () {
             //consula por campos vacíos
-            if ((this.puesto == "Seleccionar") | (this.mail == "@arbusta.net") | (this.nombre == "") | (this.loc == "Seleccionar")) {
+            if ((this.puesto == "") | (this.mail == "@arbusta.net") | (this.nombre == "") | (this.loc == "Seleccionar")) {
                 alert("Debe completar todos los campos requeridos.");
             } else {
             //formato de firma
