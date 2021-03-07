@@ -28,7 +28,7 @@ function ejecutar() {
                 alert("Debe completar todos los campos requeridos.");
             } else {
             //formato de firma
-                document.getElementById("firma").innerHTML = "<font size='1'><table><tr><img src='https://i.ibb.co/syP84FL/Arbusta-Color-ICONO.png' width='81' style='float:left'><tr><td><b>" + this.nombre + "</b>" + " / " + this.puesto + "<br>" + "</td></tr><tr><td>" + this.mail + " / " + this.num_cel + "<br>" +
+                document.getElementById("firma").innerHTML = "<font size='1'><table><tr><img src='./icons/arb_firma.gif' width='81' style='float:left'><tr><td><b>" + this.nombre + "</b>" + " / " + this.puesto + "<br>" + "</td></tr><tr><td>" + this.mail + " / " + this.num_cel + "<br>" +
                     "</td></tr><tr><td><a href='https://www.arbusta.net' target='_blank'>Arbusta</a> / <b>" + this.loc + "<br>" + "</b></td></tr>" +
                     "<tr><td><a href='https://es-la.facebook.com/arbustait/' target= '_blank'><img src='./icons/iconmonstr-facebook.png'></a>" +
                     "<a href='https://twitter.com/arbustait' target='_blank'><img src='./icons/iconmonstr-twitter.png'</a>" +
