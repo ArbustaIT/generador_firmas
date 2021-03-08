@@ -4,8 +4,8 @@ Desarrollado por Arbusters en 2018, reversionado con nueva imagen de marca en ju
 
 Básicamente funciona así,
 
-![Generador](https://media.giphy.com/media/SpopN5kf6OkI4UTNDt/giphy.gif)
+![Generador](./img/howto_firma_arbusta.gif)
 
 y la firma se ve así:
 
-![Resultado](https://i.imgur.com/3qawoOX.png)
+![Resultado](./img/firma_view.png)
